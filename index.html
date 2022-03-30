@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Band Nirvana Survey Form</title>
+</head>
+<body>
+    
+    <!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<div id="container">
+    <header class="header">
+      <h1 id="title">Rock Band Nirvana Survey Form</h1>
+      <p id="description">Thank you for time in answer the survey about the most big rock band of world!</p>
+    </header>
+    
+    <form id="survey-form" action="">
+      <div class="form-group">
+        <label id="name-label" for="name">Name </label>
+        <input id="name" type="text" class="form-control" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email </label>
+        <input id="email" type="email" class="form-control" placeholder="Enter your Email" required>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age (optional) </label>
+        <input id="number" type="number" class="form-control" placeholder="Age" min="1" max="130" required>
+      </div>
+      <div class="form-group">
+        <p>Which member of Nirvana is your favorite?</p>
+        <select name="member" id="dropdown" class="form-control" required>
+          <option disabled selected value>Select your favorite Nirvana member.</option>
+          <option value="Kurt-Cobain">Kurt Cobain</option>
+          <option value="Dave-Grohl">Dave Grohl</option>
+          <option value="Krist-Novoselic">Krist Novoselic</option>
+          <option value="Pat-Smear">Pat Smear</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Were you at a Nirvana concert?</p>
+        <label>
+          <input name="view-concert" value="yes" type="radio" class="input-radio" checked> Yes
+        </label>
+        <label>
+          <input name="view-concert" value="no" type="radio" class="input-radio" > No
+        </label>
+        <label>
+          <input name="view-concert" value="I-don-t-remember" type="radio" class="input-radio" > I don't remember
+        </label>
+      </div>
+      
+      <div class="form-group">
+        <p>Which Nirvana album do you like the most?</p>
+        <select name="album" id="album-liked" class="form-control" required>
+          <option disabled selected value>Select your favorite Nirvana album.</option>
+          <option value="Bleach">Bleach</option>
+          <option value="Nevermind">Nevermind</option>
+          <option value="Incesticide">Incesticide</option>
+          <option value="In-Utero">In Utero</option>
+          <option value="MTV-Unplugged-in-New-York">MTV Unplugged in New York</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <p>Of these 10 songs, which is the best Nirvana song? <span class="choose"> (Choose all the ones you like!)</span>
+        </p>
+        <label>
+          <input name="song" value="about-a-girl" type="checkbox" class="input-checkbox"> About a Girl
+        </label>
+        <label>
+          <input name="song" value="sappy" type="checkbox" class="input-checkbox"> Sappy
+        </label>
+        <label>
+          <input name="song" value="breed" type="checkbox" class="input-checkbox"> Breed
+        </label>
+        <label>
+          <input name="song" value="come-as-you-are" type="checkbox" class="input-checkbox"> Come As You Are
+        </label>
+        <label>
+          <input name="song" value="aneurysm" type="checkbox" class="input-checkbox"> Aneurysm
+        </label>
+        <label>
+          <input name="song" value="in-bloom" type="checkbox" class="input-checkbox"> In Bloom
+        </label>
+        <label>
+          <input name="song" value="lithium" type="checkbox" class="input-checkbox"> Lithium
+        </label>
+        <label>
+          <input name="song" value="heart-shaped-box" type="checkbox" class="input-checkbox"> Heart-Shaped Box
+        </label>
+        <label>
+          <input name="song" value="polly" type="checkbox" class="input-checkbox"> Polly
+        </label>
+        <label>
+          <input name="song" value="smell-like-teen-spirit" type="checkbox" class="input-checkbox"> Smells Like Teen Spirit
+        </label>
+      </div>
+      
+      <div class="form-group">
+        <p>Any comments on this survey form or on Nirvana?
+        </p>
+        <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+   
+    </form>
+    
+  </div>
+
+
+</body>
+</html>
